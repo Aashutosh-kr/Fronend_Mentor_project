@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="css/global-style.css" />
+    <link rel="stylesheet" href="css/destination.css" />
 </head>
+
 <body>
+    <header class="flex space-between align-center">
+        <button class="menu-btn"></button>
+        <span class="logo">
+        <a href="index.html">
+          <img
+            src="assets/shared/logo.svg"
+            alt="Space tourism website's logo"
+          />
+        </a>
+      </span>
+        <nav id="nav-hidden" class="flex align-center">
+            <ul class="primary-nav letter-spacing-medium flex content-center ff-barlow-cond navtext-size text-center text light">
+                <li class="flex align-center">
+                    <a href="index.html" class="flex gap">
+                        <span class="text-white bold">00</span>
+                        <span class="text-light uppercase">Home</span>
+                    </a>
+                </li>
+                <li class="active flex align-center">
+                    <a href="destination-moon.html" class="flex gap">
+                        <span class="text-white bold">01</span>
+                        <span class="text-light uppercase">Destination</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="crew-commander.html" class="flex gap">
+                        <span class="text-white bold">02</span>
+                        <span class="text-light uppercase">Crew</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="technology-vehicle.html" class="flex gap">
+                        <span class="text-white bold">03</span>
+                        <span class="text-light uppercase">Technology</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <main class="flex align-center">
+        <section class="wrapper flex col space-between">
+            <h1 class="text-light uppercase h4-text letter-spacing-medium ff-barlow-cond">
+                <span class="bold">01</span> Pick your destination
+            </h1>
 
-  01 Pick your destination
+            <section class="destination-image flex">
+                <img src="assets/destination/image-mars.png" alt="Mars | Destination image" />
+            </section>
+        </section>
+        <section class="intro-container flex col space-around">
+            <section id="tabs" class="flex gap">
+                <ul class="flex uppercase text-light">
+                    <li>
+                        <a href="destination-moon.html" class="text-light body-text">Moon</a
+              >
+            </li>
+            <li class="active">
+              <a href="destination-mars.html" class="text-light body-text"
+                >Mars</a
+              >
+            </li>
+            <li>
+              <a href="destination-europa.html" class="text-light body-text"
+                >Europa</a
+              >
+            </li>
+            <li>
+              <a href="destination-titan.html" class="text-light body-text"
+                >Titan</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="intro flex col space-evenly">
+          <h2 class="h2-text text-white uppercase">Mars</h2>
+          <p class="text-light text-justify body-text">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+        </section>
 
-  Moon
-  Mars
-  Europa
-  Titan
+        <hr />
 
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
-</body>
+        <section class="data flex">
+          <section class="flex col space-evenly">
+            <span class="body-text text-light text-left ff-barlow-cond"
+              >Avg. distance</span
+            >
+            <span class="sub1text-size text-white">225 mil. km</span>
+          </section>
+          <section class="flex col space-evenly">
+            <span class="body-text text-light text-left ff-barlow-cond"
+              >Est. travel time</span
+            >
+            <span class="sub1text-size text-white">9 months</span>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="script.js "></script>
+  </body>
 </html>
