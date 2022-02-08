@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="css/global-style.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
 </head>
+
 <body>
+    <header class="flex space-between align-center">
+        <button class="menu-btn"></button>
+        <span class="logo">
+        <a href="index.html">
+          <img
+            src="assets/shared/logo.svg"
+            alt="Space tourism website's logo"
+          />
+        </a>
+      </span>
+        <nav id="nav-hidden" class="flex align-center">
+            <ul class="primary-nav letter-spacing-medium flex content-center ff-barlow-cond navtext-size text-center text light">
+                <li class="active flex align-center">
+                    <a href="index.html" class="flex gap">
+                        <span class="text-white bold">00</span>
+                        <span class="text-light uppercase">Home</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="destination-moon.html" class="flex gap">
+                        <span class="text-white bold">01</span>
+                        <span class="text-light uppercase">Destination</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="crew-commander.html" class="flex gap">
+                        <span class="text-white bold">02</span>
+                        <span class="text-light uppercase">Crew</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="technology-vehicle.html" class="flex gap">
+                        <span class="text-white bold">03</span>
+                        <span class="text-light uppercase">Technology</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex align-center">
+        <section class="wrapper flex col space-evenly">
+            <h1 class="uppercase flex col">
+                <span class="text-light h4-text letter-spacing-medium ff-barlow-cond">
+            So, you want to travel to
+          </span>
+                <span class="text-white h1-text ff-bellefair">Space</span>
+            </h1>
+            <section class="intro">
+                <p class="text-light text-justify body-text">
+                    Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+                </p>
+            </section>
+        </section>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
+        <section class="btn-container flex align-center content-center">
+            <button id="main-btn" class="flex content-center align-center uppercase text-dark clr-white round">
+          <a
+            href="destination-moon.html"
+            class="flex content-center align-center text-dark ff-bellefair sub1text-size"
+          >
+            Explore
+          </a>
+        </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,81 @@
+/*--------------- 
+    Homepage
+ ---------------*/
+
+
+/* For Desktops and large screen devices */
+
+body {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+}
+
+#main-btn,
+#main-btn a {
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    border: none;
+}
+
+#main-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: hsl(var(--color-light), 0.2);
+    z-index: -100;
+}
+
+.wrapper {
+    max-width: var(--h1-width);
+    min-height: 22rem;
+}
+
+.wrapper h1 {
+    max-width: var(--h1-width);
+    height: 15rem;
+    justify-content: space-between;
+}
+
+#main-btn:hover::after {
+    transform: scale(1.6);
+}
+
+
+/* For Tablet and medium size screens */
+
+@media screen and (max-width: 900px) {
+    body {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+    .wrapper h1 {
+        text-align: center;
+    }
+    .wrapper p {
+        text-align: center;
+    }
+    .btn-container {
+        align-items: center;
+    }
+}
+
+
+/* For mobiles */
+
+@media screen and (max-width: 545px) {
+    body {
+        background-image: url("../assets/home/background-home-mobile.jpg");
+        position: relative;
+    }
+    .wrapper h1 {
+        height: 10rem;
+    }
+    #main-btn,
+    #main-btn a {
+        height: 11rem;
+        width: 11rem;
+    }
+}
