@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+
+/*--------------- 
+    Css reset
+ ---------------*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--------------- 
+    Variables
+ ---------------*/
+
+:root {
+    /* Fonts */
+    /* Font Sizes */
+    --fs-h1: 8.824rem;
+    --fs-h2: 5.883rem;
+    --fs-h3: 2.942rem;
+    --fs-h4: 1.883rem;
+    --fs-h5: 1.177rem;
+    --fs-nav: 1rem;
+    --fs-sub1: 1.65rem;
+    --fs-sub2: 0.8rem;
+    --fs-p: 0.95rem;
+    /* Letter spacing */
+    --letter-spacing-l: 4.75px;
+    --letter-spacing-m: 2.7px;
+    --letter-spacing-s: 2.35px;
+    /* Font family */
+    --ff-barlow: "Barlow", sans-serif;
+    --ff-barlow-cond: "Barlow Condensed", sans-serif;
+    --ff-bellefair: "Bellefair", serif;
+    /* Colors */
+    --color-dark: 230, 33%, 7%;
+    --color-light: 231, 76%, 90%;
+    --color-white: 0, 0%, 100%;
+    /* Others */
+    --gap: 1rem;
+    --margin-bottom: 1rem;
+    --header-height: 15vh;
+    --nav-height: 5rem;
+    --h1-width: 26rem;
+}
+
+
+/*------------------- 
+    utility classes
+ -------------------*/
+
+
+/* Flexbox */
+
+.flex {
+    display: flex;
+}
+
+.gap {
+    gap: var(--gap);
+}
+
+.flex-start {
+    align-self: flex-start;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/* Background colors */
+
+.clr-dark {
+    background: hsl(var(--color-dark));
+}
+
+.clr-light {
+    background: hsl(var(--color-light));
+}
+
+.clr-white {
+    background: hsl(var(--color-white));
+}
+
+
+/*--------------- 
+      Fonts
+ ---------------*/
+
+
+/* Font Size */
+
+p {
+    line-height: 1.7rem;
+}
+
+.body-text {
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-p);
+    font-weight: 600;
+}
+
+.h1-text {
+    font-size: var(--fs-h1);
+}
+
+.h2-text {
+    font-size: var(--fs-h2);
+}
+
+.h3-text {
+    font-size: var(--fs-h3);
+}
+
+.h4-text {
+    font-size: var(--fs-h4);
+}
+
+.h5-text {
+    font-size: var(--fs-h5);
+}
+
+.navtext-size {
+    font-size: var(--fs-nav);
+}
+
+.sub1text-size {
+    font-size: var(--fs-sub1);
+}
+
+.sub2text-size {
+    font-size: var(--fs-sub2);
+}
+
+
+/* Font Size */
+
+.letter-spacing-large {
+    letter-spacing: var(--letter-spacing-l);
+}
+
+.letter-spacing-medium {
+    letter-spacing: var(--letter-spacing-m);
+}
+
+.letter-spacing-small {
+    letter-spacing: var(--letter-spacing-s);
+}
+
+
+/* Font Colors */
+
+.text-dark {
+    color: hsl(var(--color-dark));
+}
+
+.text-light {
+    color: hsl(var(--color-light));
+}
+
+.text-white {
+    color: hsl(var(--color-white));
+}
+
+
+/* Font Style */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+/* Font family */
+
+.ff-bellefair,
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-bellefair);
+}
+
+.ff-barlow {
+    font-family: var(--ff-barlow);
+}
+
+.ff-barlow-cond,
+h5 {
+    font-family: var(--ff-barlow-cond);
+}
+
+
+/* Others */
+
+.round {
+    border-radius: 50%;
+}
+
+
+/*--------------- 
+      Layout
+---------------*/
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: var(--header-height);
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+.logo a,
+.logo a img {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+}
+
+.menu-btn {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    height: var(--nav-height);
+    min-width: 60vw;
+    top: 3rem;
+    right: 0;
+    background: hsl(var(--color-light), 0.1);
+    backdrop-filter: blur(1rem);
+}
+
+.primary-nav {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.primary-nav li {
+    margin: 0 2rem;
+    position: relative;
+}
+
+.primary-nav li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 0.16rem;
+}
+
+.primary-nav li.active:after {
+    background: hsl(var(--color-white));
+}
+
+.primary-nav li:not(.active):hover::after {
+    background: hsl(var(--color-white), 0.5);
+}
+
+main {
+    min-height: calc(100vh - var(--header-height));
+    justify-content: space-around;
+}
+
+.wrapper span.bold {
+    color: hsl(var(--color-light), 0.5);
+    margin: 0 1.5rem 0 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: hsl(var(--color-light), 0.5);
+}
+
+
+/* For Tablet and medium size screens */
+
+@media screen and (max-width: 900px) {
+    /*--------------- 
+        Variables
+    ---------------*/
+     :root {
+        /* Font Sizes */
+        --fs-h1: 7.524rem;
+        --fs-h4: 1.63rem;
+        /* Others */
+        --header-height: 10vh;
+        --h1-width: 30rem;
+    }
+    .logo {
+        top: 1.8rem;
+    }
+    nav {
+        top: 0;
+        right: 0;
+    }
+    nav span.bold {
+        display: none;
+    }
+    .primary-nav li {
+        margin: 0 1rem;
+    }
+    main {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/* For mobiles */
+
+@media screen and (max-width: 545px) {
+    /*--------------- 
+        Variables
+    ---------------*/
+     :root {
+        /* Font Sizes */
+        --fs-h1: 4.824rem;
+        --fs-h2: 4.1rem;
+        --fs-h4: 1.383rem;
+        /* Others */
+        --header-height: 15vh;
+        --h1-width: 19rem;
+    }
+    .logo {
+        top: 1.8rem;
+        left: 2.5rem;
+    }
+    .logo a,
+    .logo a img {
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+    .menu-btn {
+        display: block;
+        background-image: url("../assets/shared/icon-hamburger.svg");
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        z-index: 99999;
+        top: 2rem;
+        right: 2rem;
+        height: 1.7rem;
+        width: 2rem;
+        cursor: pointer;
+    }
+    #nav-hidden {
+        transform: translateX(100%);
+    }
+    #nav-shown {
+        transform: translateX(0%);
+    }
+    nav {
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        height: 100vh;
+        width: 65vw;
+    }
+    nav span.bold {
+        display: inline;
+    }
+    .primary-nav {
+        height: 40%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 1rem;
+    }
+    .primary-nav li:after {
+        display: none;
+    }
+}
+
+
+/*--------------- 
+    Main css
+ ---------------*/
+
+#slider2 li {
+    height: 4rem;
+    width: 4rem;
+}
+
+#slider2 li.active {
+    background: hsl(var(--color-white));
+}
+
+#slider2 li:hover {
+    border: 1px solid hsl(var(--color-white));
+}
+
+#slider2 li {
+    border: 1px solid hsl(var(--color-white), 0.2);
+}

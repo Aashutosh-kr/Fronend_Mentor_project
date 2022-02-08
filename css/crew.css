@@ -1,0 +1,151 @@
+/*--------------- 
+    Homepage
+ ---------------*/
+
+
+/* For Desktops and large screen devices */
+
+body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* main h1 {
+    width: 100%;
+    margin: 1rem 0 0 25%;
+} */
+
+main>section {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrapper {
+    height: 50vh;
+}
+
+.wrapper p {
+    max-width: var(--h1-width);
+}
+
+.intro-container {
+    height: 30vh;
+}
+
+.intro-container h2 {
+    height: 8rem;
+    font-weight: 700;
+}
+
+.intro-container h2 span:first-of-type {
+    color: hsl(var(--color-white), 0.5);
+}
+
+#slider1 li {
+    height: 0.8rem;
+    width: 0.8rem;
+    background: hsl(var(--color-white), 0.1);
+}
+
+#slider1 li.active {
+    background: hsl(var(--color-white));
+}
+
+#slider1 li:not(.active):hover {
+    background: hsl(var(--color-white), 0.5);
+}
+
+.crew-image {
+    align-self: flex-end;
+}
+
+hr {
+    display: none;
+}
+
+
+/* For Tablet and medium size screens */
+
+@media screen and (max-width: 900px) {
+    /*--------------- 
+        Variables
+    ---------------*/
+     :root {
+        /* Font sizes */
+        --fs-h3: 2.242rem;
+    }
+    body {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+    main {
+        width: 90%;
+    }
+    main h1 {
+        margin: 0;
+    }
+    main>section {
+        flex-direction: column;
+    }
+    .wrapper {
+        width: 100%;
+        height: 50vh;
+        justify-content: space-evenly;
+    }
+    .intro-container {
+        align-items: center;
+        text-align: center;
+    }
+    .intro p {
+        text-align: center;
+    }
+    #slider1 {
+        justify-content: center;
+    }
+    .crew-image {
+        align-self: center;
+        align-items: center;
+    }
+}
+
+
+/* For mobiles */
+
+@media screen and (max-width: 545px) {
+    body {
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+        position: relative;
+    }
+    main h1 {
+        width: initial;
+        margin: 0;
+        text-align: center;
+    }
+    main>section {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .crew-image {
+        width: 100%;
+    }
+    .crew-image img {
+        height: 22rem;
+        width: 16.15rem;
+    }
+    hr {
+        display: block;
+        width: 100%;
+    }
+    .wrapper {
+        height: 40vh;
+        flex-direction: column-reverse;
+    }
+    .intro p {
+        max-width: 90%;
+    }
+}
