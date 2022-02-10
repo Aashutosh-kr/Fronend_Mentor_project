@@ -1,0 +1,120 @@
+/*--------------------
+    Technology page 
+--------------------*/
+
+
+/* For Desktops and large screen devices */
+
+body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+main {
+    width: 87%;
+    margin-left: auto;
+    justify-content: space-evenly;
+}
+
+main h1 {
+    text-align: left;
+}
+
+.wrapper {
+    align-items: center;
+    width: 33rem;
+}
+
+.intro-container {
+    min-height: 14rem;
+}
+
+.intro-container h2 {
+    min-height: 5rem;
+}
+
+.intro-container h2 span {
+    text-align: left;
+}
+
+#slider2 a {
+    height: 4rem;
+    width: 4rem;
+    font-size: var(--fs-sub1);
+    border: 1px solid hsl(var(--color-white), 0.2);
+}
+
+#slider2 a.active {
+    color: hsl(var(--color-dark));
+    background: hsl(var(--color-white));
+}
+
+#slider2 a:not(.active) {
+    color: hsl(var(--color-white));
+}
+
+#slider2 a:not(.active):hover {
+    border: 1px solid hsl(var(--color-white));
+}
+
+.image #img-landscape {
+    display: none;
+}
+
+
+/* For Tablet and medium size screens */
+
+@media screen and (max-width: 900px) {
+    body {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+    main {
+        width: 100%;
+    }
+    main>section {
+        flex-direction: column-reverse;
+    }
+    main h1 {
+        margin: 0 0 2rem 0;
+    }
+    main h1,
+    .wrapper {
+        width: 90%;
+        margin-inline: auto;
+    }
+    .wrapper {
+        height: 30rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .intro-container h2 span,
+    .intro-container p {
+        text-align: center;
+    }
+    #slider2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .image #img-portrait {
+        display: none;
+    }
+    .image #img-landscape {
+        display: inline;
+        width: 100%;
+    }
+}
+
+
+/* For mobiles */
+
+@media screen and (max-width: 545px) {
+    body {
+        background-image: url("../assets/technology/background-technology-mobile.jpg");
+        position: relative;
+    }
+    main h1 {
+        text-align: center;
+    }
+    .wrapper p {
+        max-width: 100%;
+    }
+}

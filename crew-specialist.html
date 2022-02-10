@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="css/global-style.css" />
+    <link rel="stylesheet" href="css/crew.css" />
 </head>
+
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
+    <header class="flex space-between align-center">
+        <button class="menu-btn"></button>
+        <span class="logo">
+        <a href="index.html">
+          <img
+            src="assets/shared/logo.svg"
+            alt="Space tourism website's logo"
+          />
+        </a>
+      </span>
+        <nav id="nav-hidden" class="flex align-center">
+            <ul class="primary-nav letter-spacing-medium flex content-center ff-barlow-cond navtext-size text-center text light">
+                <li class="flex align-center">
+                    <a href="index.html" class="flex gap">
+                        <span class="text-white bold">00</span>
+                        <span class="text-light uppercase">Home</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="destination-moon.html" class="flex gap">
+                        <span class="text-white bold">01</span>
+                        <span class="text-light uppercase">Destination</span>
+                    </a>
+                </li>
+                <li class="active flex align-center">
+                    <a href="crew-commander.html" class="flex gap">
+                        <span class="text-white bold">02</span>
+                        <span class="text-light uppercase">Crew</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="technology-vehicle.html" class="flex gap">
+                        <span class="text-white bold">03</span>
+                        <span class="text-light uppercase">Technology</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex text-center">
+        <h1 class="text-light uppercase h4-text letter-spacing-medium ff-barlow-cond">
+            <span class="bold">02</span> Meet your crew
+        </h1>
+        <section class="flex">
+            <section class="wrapper flex col space-between">
+                <section class="intro-container flex col space-around">
+                    <h2 class="uppercase flex col space-around">
+                        <span class="h3-text">Mission Specialist</span>
+                        <span class="text-white h3-text">Mark Shuttleworth</span>
+                    </h2>
+                    <section class="intro flex col space-evenly">
+                        <p class="text-light text-justify body-text">
+                            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+                        </p>
+                    </section>
+                </section>
+                <section class="slider">
+                    <ul id="slider1" class="flex gap">
+                        <li>
+                            <a href="crew-commander.html" class="round"></a>
+                        </li>
+                        <li>
+                            <a href="crew-specialist.html" class="active round"></a>
+                        </li>
+                        <li>
+                            <a href="crew-pilot.html" class="round"></a>
+                        </li>
+                        <li>
+                            <a href="crew-engineer.html" class="round"></a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="crew-image flex col">
+                <img src="assets/crew/image-mark-shuttleworth.png" alt="Mission Specialist | Mark Shuttleworth | Crew member" />
+                <hr />
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

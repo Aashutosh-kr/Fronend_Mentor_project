@@ -333,7 +333,11 @@ main {
     justify-content: space-around;
 }
 
-.wrapper span.bold {
+.wrapper p {
+    max-width: var(--h1-width);
+}
+
+main span.bold {
     color: hsl(var(--color-light), 0.5);
     margin: 0 1.5rem 0 0;
 }
@@ -442,26 +446,4 @@ hr {
     .primary-nav li:after {
         display: none;
     }
-}
-
-
-/*--------------- 
-    Main css
- ---------------*/
-
-#slider2 li {
-    height: 4rem;
-    width: 4rem;
-}
-
-#slider2 li.active {
-    background: hsl(var(--color-white));
-}
-
-#slider2 li:hover {
-    border: 1px solid hsl(var(--color-white));
-}
-
-#slider2 li {
-    border: 1px solid hsl(var(--color-white), 0.2);
 }

@@ -1,5 +1,5 @@
 /*--------------- 
-    Homepage
+    Crew page
  ---------------*/
 
 
@@ -10,54 +10,53 @@ body {
 }
 
 main {
+    width: 77%;
+    margin: auto;
     flex-direction: column;
     justify-content: space-between;
 }
 
-
-/* main h1 {
-    width: 100%;
-    margin: 1rem 0 0 25%;
-} */
+main h1 {
+    text-align: left;
+    margin: 2rem 0 0 0;
+}
 
 main>section {
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .wrapper {
     height: 50vh;
 }
 
-.wrapper p {
-    max-width: var(--h1-width);
-}
-
 .intro-container {
-    height: 30vh;
+    min-height: 30vh;
 }
 
 .intro-container h2 {
-    height: 8rem;
+    min-height: 8rem;
     font-weight: 700;
+    text-align: left;
 }
 
 .intro-container h2 span:first-of-type {
     color: hsl(var(--color-white), 0.5);
 }
 
-#slider1 li {
+#slider1 a {
+    display: inline-block;
     height: 0.8rem;
     width: 0.8rem;
     background: hsl(var(--color-white), 0.1);
 }
 
-#slider1 li.active {
+#slider1 a.active {
     background: hsl(var(--color-white));
 }
 
-#slider1 li:not(.active):hover {
+#slider1 a:not(.active):hover {
     background: hsl(var(--color-white), 0.5);
 }
 
@@ -86,16 +85,16 @@ hr {
     main {
         width: 90%;
     }
-    main h1 {
-        margin: 0;
-    }
     main>section {
         flex-direction: column;
     }
     .wrapper {
         width: 100%;
-        height: 50vh;
+        min-height: 50vh;
         justify-content: space-evenly;
+    }
+    .intro-container h2 {
+        text-align: center;
     }
     .intro-container {
         align-items: center;
@@ -123,29 +122,27 @@ hr {
     }
     main h1 {
         width: initial;
-        margin: 0;
+        margin: 0 0 2rem 0;
         text-align: center;
     }
     main>section {
         flex-direction: column-reverse;
-        width: 90%;
     }
     .crew-image {
         width: 100%;
     }
     .crew-image img {
         height: 22rem;
-        width: 16.15rem;
     }
     hr {
         display: block;
         width: 100%;
     }
     .wrapper {
-        height: 40vh;
+        min-height: 40vh;
         flex-direction: column-reverse;
     }
     .intro p {
-        max-width: 90%;
+        max-width: 100%;
     }
 }

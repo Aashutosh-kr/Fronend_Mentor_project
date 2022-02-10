@@ -63,7 +63,7 @@ main {
 
 .intro-container {
     text-align: left;
-    height: 25rem;
+    min-height: 25rem;
     max-width: var(--h1-width);
 }
 

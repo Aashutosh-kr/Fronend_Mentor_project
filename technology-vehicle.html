@@ -1,32 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="css/global-style.css" />
+    <link rel="stylesheet" href="css/technology.css" />
 </head>
+
 <body>
+    <header class="flex space-between align-center">
+        <button class="menu-btn"></button>
+        <span class="logo">
+        <a href="index.html">
+          <img
+            src="assets/shared/logo.svg"
+            alt="Space tourism website's logo"
+          />
+        </a>
+      </span>
+        <nav id="nav-hidden" class="flex align-center">
+            <ul class="primary-nav letter-spacing-medium flex content-center ff-barlow-cond navtext-size text-center text light">
+                <li class="flex align-center">
+                    <a href="index.html" class="flex gap">
+                        <span class="text-white bold">00</span>
+                        <span class="text-light uppercase">Home</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="destination-moon.html" class="flex gap">
+                        <span class="text-white bold">01</span>
+                        <span class="text-light uppercase">Destination</span>
+                    </a>
+                </li>
+                <li class="flex align-center">
+                    <a href="crew-commander.html" class="flex gap">
+                        <span class="text-white bold">02</span>
+                        <span class="text-light uppercase">Crew</span>
+                    </a>
+                </li>
+                <li class="active flex align-center">
+                    <a href="technology-vehicle.html" class="flex gap">
+                        <span class="text-white bold">03</span>
+                        <span class="text-light uppercase">Technology</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex col text-center">
+        <h1 class="text-light uppercase h4-text letter-spacing-medium ff-barlow-cond">
+            <span class="bold">03</span>Space launch 101
+        </h1>
+        <section class="flex space-between">
+            <section class="wrapper flex space-between">
+                <section class="slider flex col gap">
+                    <ul id="slider2" class="flex space-between align-center col gap">
+                        <li>
+                            <a href="technology-vehicle.html" class="flex content-center align-center round active">1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology-spaceport.html"
+                  class="flex content-center align-center round text-white"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology-capsule.html"
+                  class="flex content-center align-center round text-white"
+                  >3</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="intro-container flex col space-between">
+            <h2 class="uppercase flex col space-between">
+              <span class="text-light text-left sub2text-size"
+                >The terminology...</span
+              >
+              <span class="text-white h3-text">Launch vehicle</span>
+            </h2>
+            <section class="intro flex col space-evenly">
+              <p class="text-light text-justify body-text">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </section>
+          </section>
+        </section>
+        <section class="image flex col">
+          <img
+            src="assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="portrait image of launch vehicle"
+            id="img-portrait"
+          />
+          <img
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="landscape image of launch vehicle"
+            id="img-landscape"
+          />
+        </section>
+      </section>
+    </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
