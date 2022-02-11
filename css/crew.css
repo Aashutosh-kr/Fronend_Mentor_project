@@ -64,7 +64,7 @@ main>section {
     align-self: flex-end;
 }
 
-hr {
+:not(nav>hr)hr {
     display: none;
 }
 

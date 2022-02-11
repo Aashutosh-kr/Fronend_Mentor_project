@@ -274,7 +274,7 @@ header {
 
 .logo {
     position: fixed;
-    top: 2.5rem;
+    top: 4rem;
     left: 2.5rem;
 }
 
@@ -342,6 +342,12 @@ main span.bold {
     margin: 0 1.5rem 0 0;
 }
 
+nav hr {
+    position: absolute;
+    width: 54%;
+    left: -52%;
+}
+
 hr {
     border: none;
     height: 1px;
@@ -371,6 +377,9 @@ hr {
         right: 0;
     }
     nav span.bold {
+        display: none;
+    }
+    nav hr {
         display: none;
     }
     .primary-nav li {
