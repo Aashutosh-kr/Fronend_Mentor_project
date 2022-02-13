@@ -12,10 +12,10 @@ body {
     height: 20rem;
     width: 20rem;
 }
-#main-btn {
+/* #main-btn {
     margin:5rem;
 }
-
+*/
 #main-btn,
 #main-btn a {
     position: relative;
