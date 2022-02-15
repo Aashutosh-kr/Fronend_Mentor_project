@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design system</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="flex space-between text-light">
+        <span class="logo">
+        <a href="index.html">
+          <img src="../assets/shared/logo.svg" alt="Logo" />
+        </a>
+      </span>
+        <p>Design System</h1>
+    </header>
+
+    <main class="flex col space-evenly">
+        <div class="sub1-size text-left uppercase text-white">
+            <span class="text-light">01</span> Colors
+        </div>
+
+        <article id="colors" class="flex space-between">
+            <section class="color-container flex col space-between">
+                <section class="color-box clr-dark text-white">#0B0D17</section>
+                <p>
+                    <span class="text-light text-left">RGB</span>
+                    <span class="text-white text-right">11,13,23</span>
+                </p>
+                <p>
+                    <span class="text-light">HSL</span>
+                    <span class="text-white text-right">230,35%,7%</span>
+                </p>
+            </section>
+            <section class="color-container flex col space-between">
+                <section class="color-box clr-light text-dark">#D0D6F9</section>
+                <p>
+                    <span class="text-light text-left">RGB</span>
+                    <span class="text-white text-right">208,214,249</span>
+                </p>
+                <p>
+                    <span class="text-light">HSL</span>
+                    <span class="text-white text-right">231,77%,90%</span>
+                </p>
+            </section>
+            <section class="color-container flex col space-between">
+                <section class="color-box clr-white text-dark">#FFFFF</section>
+                <p>
+                    <span class="text-light text-left">RGB</span>
+                    <span class="text-white text-right">255,255,255</span>
+                </p>
+                <p>
+                    <span class="text-light">HSL</span>
+                    <span class="text-white text-right">0,0%,100%</span>
+                </p>
+            </section>
+        </article>
+
+        <div class="sub1-size text-left uppercase text-white">
+            <span class="text-light">02</span> typography
+        </div>
+
+        <article id="typography-container" class="flex space-between">
+            <section class="typography flex col gap space-between">
+                <section class="flex col gap space-between">
+                    <p class="text-left text-light">Heading1-Bellefair Regular - 150px</p>
+
+                    <h1 class="text-white text-left uppercase ff-bellefair">earth</h1>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-left text-light">Heading2-Bellefair Regular - 100px</p>
+
+                    <h2 class="text-white text-left uppercase ff-bellefair">venus</h2>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-left text-light">Heading3-Bellefair Regular - 50px</p>
+
+                    <h3 class="text-white text-left uppercase ff-bellefair">jupiter & saturn</h3>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-left text-light">Heading4-Bellefair Regular - 32px</p>
+
+                    <h4 class="text-white text-left uppercase ff-bellefair">
+                        uranus, neptune & pluto
+                    </h4>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-left text-light">
+                        Heading5-Barlow Condensed Regular - 20px - 4.75 Character Space
+                    </p>
+
+                    <h5 class="text-white text-left uppercase ff-barlow-cond">
+                        so, you want to travel to space
+                    </h5>
+                </section>
+            </section>
+            <section class="typography flex col gap space-between">
+                <section class="flex col gap space-between">
+                    <p class="text-light text-left">
+                        Subheading1 - Bellefair Regular - 28px
+                    </p>
+                    <p class="sub1text-size text-left text-white uppercase ff-bellefair">384400 km</p>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-light text-left">
+                        Subheading2 - Barlow Condensed Regular - 14px - 2.35 Character Space
+                    </p>
+                    <p class="sub2text-size text-left text-white uppercase ff-barlow-cond">avg. distance</p>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-light text-left">
+                        Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
+                    </p>
+                    <p class="navtext-size text-left text-white uppercase ff-barlow-cond">europa</p>
+                </section>
+                <section class="flex col gap space-between">
+                    <p class="text-light text-left">Body Text</p>
+                    <p class="body-text text-left text-white ff-barlow">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus reiciendis blanditiis dolorem, ipsa veritatis sapiente rem, quis, modi perspiciatis voluptas tempore est ab saepe! Voluptatem magni ipsa in tempora libero quasi nemo delectus? Ut nam
+                        soluta hic id quae. Quos quae, eum eveniet maiores sapiente harum earum porro id odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, accusantium. Consequuntur explicabo esse, eum dolor reiciendis amet ducimus
+                        quisquam incidunt reprehenderit odit asperiores beatae, commodi, dolore laborum? Fugiat, sequi repellendus?
+                    </p>
+                </section>
+            </section>
+        </article>
+
+        <div class="sub1-size text-left uppercase text-white">
+            <span class="text-light">03</span> interactive elements
+        </div>
+
+        <article id="interactive-elements-container" class="flex col">
+            <section class="nav flex col">
+                <ul class="navbar flex space-evenly align-center text-center text light">
+                    <li class="flex align-center active">
+                        <p>
+                            <span class="text-white">00</span>
+                            <span class="text-light uppercase">active</span>
+                        </p>
+                    </li>
+                    <li class="flex align-center hover">
+                        <p>
+                            <span class="text-white">01</span>
+                            <span class="text-light uppercase">hovered</span>
+                        </p>
+                    </li>
+                    <li class="flex align-center idle">
+                        <p>
+                            <span class="text-white">02</span>
+                            <span class="text-light uppercase">idle</span>
+                        </p>
+                    </li>
+                </ul>
+                <p class="text-light text-center">
+                    Different States of Navigation Bar
+                </p>
+            </section>
+            <section id="interactive-elements-btns" class="flex space-around gap">
+
+                <section class="flex col space-between">
+                    <section class="flex col align-center">
+                        <section id="main-btn-idle" class="flex content-center align-center interactive-elements uppercase text-dark clr-white round">
+                            <span>explore</span>
+                        </section>
+                        <p class="text-center text-light">
+                            Landing Page Main Button - Idle
+                        </p>
+                    </section>
+                    <section class="flex col align-center">
+                        <section id="main-btn-hover" class="flex content-center align-center interactive-elements uppercase text-dark clr-white round">
+                            <span>explore</span>
+                        </section>
+                        <p class="text-center text-light">
+                            Landing Page Main Button - Hover
+                        </p>
+                    </section>
+                </section>
+                <section class="flex col space-between">
+                    <section class="interactive-elements">
+                        <section id="tabs" class="flex col gap">
+                            <ul class="flex space-between uppercase text-light">
+                                <li class="active">
+                                    <p>moon</p>
+                                </li>
+                                <li class="hover">
+                                    <p>mars</p>
+                                </li>
+                                <li class="idle">
+                                    <p>europa</p>
+                                </li>
+                            </ul>
+                            <p class="text-light text-center">Tabs(Active,Hover & Idle)</p>
+                        </section>
+                    </section>
+
+                    <section class="interactive-elements flex col gap">
+                        <ul id="slider1" class="flex content-center gap">
+                            <li class="round active"></li>
+                            <li class="round hover"></li>
+                            <li class="round idle"></li>
+                        </ul>
+                        <p class="text-light text-center">
+                            Slider 1 States (Active,Hover & Idle)
+                        </p>
+                    </section>
+                    <section class="interactive-elements flex col gap">
+                        <ul id="slider2" class="flex space-between
+                        align-center col gap">
+                            <li class="flex content-center align-center round text-dark active">1</li>
+                            <li class="flex content-center align-center round text-white hover">2</li>
+                            <li class="flex content-center align-center round text-white idle">3</li>
+                        </ul>
+                        <p class="text-light text-center">
+                            Slider 2 States (Active,Hover & Idle)
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

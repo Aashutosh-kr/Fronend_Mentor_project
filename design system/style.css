@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+
+/*--------------- 
+    Variables
+ ---------------*/
+
+:root {
+    /* font family */
+    --fs-h1: 8.824rem;
+    --fs-h2: 5.883rem;
+    --fs-h3: 2.942rem;
+    --fs-h4: 1.883rem;
+    --fs-h5: 1.177rem;
+    --fs-nav: 1rem;
+    --fs-sub1: 1.65rem;
+    --fs-sub2: 0.8rem;
+    --fs-p: 0.95rem;
+    /* font family */
+    --ff-barlow: "Barlow", sans-serif;
+    --ff-barlow-cond: "Barlow Condensed", sans-serif;
+    --ff-bellefair: "Bellefair", serif;
+    /* Colors */
+    --color-dark: 230, 33%, 7%;
+    --color-light: 231, 76%, 90%;
+    --color-white: 0, 0%, 100%;
+    /* Others */
+    --gap: 1rem;
+    --margin-bottom: 1rem;
+}
+
+
+/*utility classes*/
+
+
+/* Flexbox */
+
+.flex {
+    display: flex;
+}
+
+.gap {
+    gap: var(--gap);
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/* Background colors */
+
+.clr-dark {
+    background: hsl(var(--color-dark));
+}
+
+.clr-light {
+    background: hsl(var(--color-light));
+}
+
+.clr-white {
+    background: hsl(var(--color-white));
+}
+
+
+/* Fonts */
+
+
+/* Font Size */
+
+p {
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-p);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+}
+
+.navtext-size {
+    font-size: var(--fs-nav);
+}
+
+.sub1text-size {
+    font-size: var(--fs-sub1);
+}
+
+.sub2text-size {
+    font-size: var(--fs-sub2);
+}
+
+
+/* Font Colors */
+
+.text-dark {
+    color: hsl(var(--color-dark));
+}
+
+.text-light {
+    color: hsl(var(--color-light));
+}
+
+.text-white {
+    color: hsl(var(--color-white));
+}
+
+
+/* Font Style */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* Font family */
+
+.ff-bellefair {
+    font-family: var(--ff-bellefair);
+}
+
+.ff-barlow {
+    font-family: var(--ff-barlow);
+}
+
+.ff-barlow-cond {
+    font-family: var(--ff-barlow-cond);
+}
+
+
+/* Others */
+
+.round {
+    border-radius: 50%;
+}
+
+
+/*--------------- 
+    Css reset
+ ---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    transition: all 250ms ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*--------------- 
+    Main css
+ ---------------*/
+
+body {
+    background: hsl(var(--color-dark));
+    padding: 5rem;
+}
+
+header {
+    margin: 0 0 2rem 0;
+}
+
+.logo a img {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+main>h2 {
+    padding: 2rem 0;
+}
+
+article {
+    margin: 1rem 0 2rem 0;
+    /* outline: 2px solid tomato; */
+}
+
+
+/* colors container */
+
+.color-container {
+    min-width: 30%;
+    min-height: 8rem;
+}
+
+.color-box {
+    outline: 1px solid hsl(var(--color-light));
+    padding: 2rem 3rem 1rem 1rem;
+}
+
+
+/* typography container */
+
+#typography-container>section {
+    max-width: 50%;
+}
+
+
+/* interactive container */
+
+.nav {
+    margin-bottom: 4rem;
+}
+
+.navbar {
+    height: 3.6rem;
+    margin-bottom: var(--margin-bottom);
+    position: relative;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(var(--color-light), 0.04);
+}
+
+.navbar li {
+    height: 100%;
+    position: relative;
+}
+
+.navbar li.active:after,
+.navbar li.hover:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 0.1rem;
+    background: hsl(var(--color-white));
+}
+
+.navbar li.hover:hover:after {
+    background: hsl(var(--color-white), 0.5);
+}
+
+#interactive-elements-btns {
+    min-height: 90vh;
+}
+
+#main-btn-idle,
+#main-btn-hover {
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+#main-btn-hover {
+    --margin-bottom: 5rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+#main-btn-hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: hsl(var(--color-light), 0.1);
+    z-index: -100;
+}
+
+#main-btn-hover:hover::after {
+    transform: scale(1.6);
+}
+
+#tabs,
+#slider1,
+#slider2 {
+    margin-bottom: var(--margin-bottom);
+}
+
+#tabs ul {
+    height: 2rem;
+}
+
+#tabs li {
+    position: relative;
+}
+
+#tabs li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 0.1rem;
+}
+
+#tabs li.active:after {
+    background: hsl(var(--color-white));
+}
+
+#tabs li.hover:hover:after {
+    background: hsl(var(--color-white), 0.5);
+}
+
+#slider1 li,
+#slider1 li.active {
+    height: 0.7rem;
+    width: 0.7rem;
+    background: hsl(var(--color-white));
+}
+
+#slider1 li.hover:hover {
+    background: hsl(var(--color-white), 0.5);
+}
+
+#slider1 li.idle,
+#slider1 li.hover {
+    background: hsl(var(--color-white), 0.1);
+}
+
+#slider2 li {
+    height: 4rem;
+    width: 4rem;
+}
+
+#slider2 li.active {
+    background: hsl(var(--color-white));
+}
+
+#slider2 li.hover:hover {
+    border: 1px solid hsl(var(--color-white));
+}
+
+#slider2 li.idle,
+#slider2 li.hover {
+    border: 1px solid hsl(var(--color-white), 0.2);
+}
