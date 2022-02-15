@@ -9,7 +9,7 @@ body {
     background-image: url("../assets/home/background-home-desktop.jpg");
 }
 
-.btn-container {
+#main-btn {
     height: 20rem;
     width: 20rem;
 }
