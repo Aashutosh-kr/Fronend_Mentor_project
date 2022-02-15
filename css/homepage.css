@@ -9,10 +9,16 @@ body {
     background-image: url("../assets/home/background-home-desktop.jpg");
 }
 
-#main-btn {
+.btn-container {
     height: 20rem;
     width: 20rem;
 }
+
+
+/* #main-btn {
+    margin:5rem;
+}
+*/
 
 #main-btn,
 #main-btn a {
